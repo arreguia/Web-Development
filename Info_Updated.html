@@ -1,0 +1,36 @@
+<BODY BGCOLOR="FF4500">
+<form name="redirect">
+<center>
+<font face="Arial"><b> Your Information has been updated.<br><br>
+<form>
+<input type="text" size="3" name="redirect2">
+</form>
+seconds</b></font>
+</center>
+
+<div align="center">
+<IMG SRC="Done.jpg" alt="image" height= "200" />
+</div>
+
+<script>
+
+var targetURL="http://web.engr.oregonstate.edu/~arreguia/index.html"
+var countdownfrom=5
+
+var currentsecond=document.redirect.redirect2.value=countdownfrom+1
+function countredirect(){
+if (currentsecond!=1){
+currentsecond-=1
+document.redirect.redirect2.value=currentsecond
+}
+else{
+window.location=targetURL
+return
+}
+setTimeout("countredirect()",1000)
+}
+
+countredirect()
+//-->
+</script> 
+</BODY>

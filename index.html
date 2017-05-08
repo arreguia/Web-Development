@@ -1,0 +1,74 @@
+
+<head>
+<title>Spare Change</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Main Web page for Spare change" />
+<meta name="keywords" content="Spare Change Main" />
+  
+</head>
+</header>
+<body id="homepage">
+<body BGCOLOR="#347C17">
+							
+<h1 align= "Center" >Spare Change</h1>
+
+<h2 align= "Center" > <a href ="http://web.engr.oregonstate.edu/~tyrrella/SpareSomeChange">Home</a> 
+		<align= "padding-right"><align= "Right" ><a href="http://web.engr.oregonstate.edu/~tyrrella/SpareSomeChange/login/index.php">Create an account</a>
+		<align= "padding-left"><align= "Right"><a href="/login/index.php">Create your Donor Account!</a></h2>
+
+<!-- <a href="unittest1.php">Unit Test for Database Connection</a> -->
+
+
+
+<h3 align= "Center" >Welcome to Spare Some Change, Make a Change</h3>
+				<TD>
+					<h1 align= "Center" >"Every Coin Counts!</h1>
+							
+				
+				<TD> 
+		
+	<h4 align= "Center"><IMG  SRC="SpareChange.jpg" alt="image"	align= "Center"/></h4>
+<h4 align= "Center" >	
+<script>
+
+
+			var month=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+			function countup(yr,m,d){
+			var present=new Date()
+			var presenty=present.getYear()
+			if (presenty < 1000)
+			presenty+=1900
+			var presentm=present.getMonth()
+			var presentd=present.getDate()
+			var presentstring=month[presentm]+" "+presentd+", "+presenty
+			var paststring=month[m-1]+" "+d+", "+yr
+			var difference=(Math.round((Date.parse(presentstring)-Date.parse(paststring))/(24*60*60*1000))*1)
+			difference+=".67 in change"
+			document.write("People have donated $"+difference+" since Spare change got started!")
+}
+//enter the count up date using the format year/month/day
+countup(2001,10,10)
+</script>
+</h4>
+				
+				<h3 align= "center">There are many who wonder how this could possible be an efficient way.</h3>
+				<h3 align= "center">Well with thousands of people signed up, the change adds up.</h3>
+				<h3 align= "center">You can help the cause by creating an account and getting started today! </h3>
+				
+
+	
+
+<div style="position:absolute;bottom:5px;">
+<nav>
+
+<ul id="intro">
+	
+<li>&copy; Anthony Tyrrell 2014</li>
+	<link rel="stylesheet" type="text/css" href="screen.css">
+</ul>
+
+				</div>                                                                                                                                                                                                                                                                                                                                                                                               
+
+</body>
+</html>
